@@ -1,0 +1,12 @@
+{{#with foundLego}}
+    <img src="{{imgUrl}}">
+    <h1>Set Name Is || {{name}}</h1>
+    <h1>Set ID is || {{setId}}</h1>
+    <h1>Number of pieces || {{pieceCount}}</h1>
+    <form action="/legos/edit/{{id}}" method="GET">
+        <button type="submit">Edit Set</button>
+    </form>
+    <form action="/legos" method="GET">
+        <button type="submit">Back</button>
+    </form>
+{{/with}}

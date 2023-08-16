@@ -1,0 +1,17 @@
+<h1>All sets</h1>
+<br>
+    {{#each legoList}}
+    <br>
+        <img src="{{imgUrl}}"></br>
+            Set Name || {{name}}</br>
+            Set Id || {{setId}}</br>
+            <a href="/legos/{{id}}">View Details</a></br>
+            <a href="/legos/edit/{{id}}">Edit Details</a></br>
+            <form action="/legos/delete/{{id}}" method="POST">
+                <button type="submit">Delete Set</button>
+            </form>
+    </li>
+        {{/each}}
+    </ul>
+
+<a href="/legos/add">Add New Set</a>

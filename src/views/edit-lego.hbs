@@ -1,0 +1,28 @@
+<h1>Edit a Set</h1>
+{{#with foundLego}}
+
+<form action='/legos/edit/{{id}}' method="POST">
+    <label for="name">Enter Set Name: </label><br>
+    <input type="text" name="name" placeholder="Enter Name"
+        value="{{name}}"/><br>
+    <label for="imgUrl">Enter Set Img: </label><br>
+    <input type="text" name="imgUrl" placeholder="Enter imgUrl"
+        value="{{imgUrl}}"/><br>
+    <label for="setId">Enter Set Id: </label><br>
+    <input type="number" name="setId" placeholder="Enter setId"
+        value="{{setId}}" /><br>
+    <label for="pieceCount">Enter Piece Count: </label><br>
+    <input type="number" name="pieceCount" placeholder="Enter pieceCount"
+        value="{{pieceCount}}" /><br>
+    <label for="yearRelesed">Enter Year Relesed: </label><br>
+    <input type="number" name="yearRelesed" placeholder="Enter yearRelesed"
+        value="{{yearRelesed}}" /><br>
+    <button type="submit">Edit Set</button>
+</form>
+        <form action="/legos/delete/{{id}}" method="POST">
+            <button type="submit">Delete Item</button>
+        </form>
+        <form action="/legos" method="GET">
+            <button type="submit">Back</button>
+        </form>
+{{/with}}
