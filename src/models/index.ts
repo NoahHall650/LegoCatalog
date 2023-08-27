@@ -1,9 +1,9 @@
 import { Sequelize } from "sequelize";
 import { LegoFactory } from "./lego";
 
-const dbName = 'legoDB';
-const username = 'root';
-const password = 'Password1!';
+const dbName = ''; // Your database name here
+const username = ''; // Your username here
+const password = ''; // Your password here
 
 const sequelize = new Sequelize(dbName, username, password, {
     host: '127.0.0.1',
